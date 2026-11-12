@@ -1,0 +1,120 @@
+/* Mismos colores y medidas del MVP web (public/style.css). */
+.root {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-background-color: #f6f5f0;
+    -fx-text-fill: #2c2c2a;
+    -fx-focus-color: #9cc4ec;
+    -fx-faint-focus-color: transparent;
+}
+
+.label { -fx-text-fill: #2c2c2a; }
+
+/* ---------- cabecera ---------- */
+.encabezado {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #d4d2c8 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 12 20 12 20;
+}
+.h1 { -fx-font-size: 18px; -fx-font-weight: bold; }
+.nav-nota { -fx-font-size: 12px; -fx-text-fill: #5f5e5a; -fx-font-weight: normal; }
+.etiqueta-sesion { -fx-font-size: 13px; -fx-text-fill: #5f5e5a; }
+
+.scroll-principal, .scroll-principal > .viewport { -fx-background-color: #f6f5f0; -fx-background: #f6f5f0; }
+.scroll-principal { -fx-padding: 0; -fx-background-insets: 0; }
+
+/* ---------- tarjetas y textos ---------- */
+.tarjeta {
+    -fx-background-color: white;
+    -fx-border-color: #d4d2c8;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 18 20 18 20;
+}
+.h2 { -fx-font-size: 17px; -fx-font-weight: bold; -fx-padding: 0 0 12 0; }
+.etiqueta { -fx-font-size: 13px; -fx-text-fill: #5f5e5a; }
+.campo { -fx-padding: 0 0 14 0; }
+
+/* ---------- controles ---------- */
+.text-field, .combo-box, .date-picker > .text-field, .button {
+    -fx-font-size: 14px;
+    -fx-background-color: white;
+    -fx-border-color: #9a988f;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: #2c2c2a;
+}
+.text-field { -fx-padding: 8 10 8 10; }
+.button { -fx-padding: 8 10 8 10; -fx-cursor: hand; }
+.button:hover { -fx-background-color: #f1efe8; }
+.button.principal { -fx-background-color: #185fa5; -fx-border-color: #185fa5; -fx-text-fill: white; -fx-font-weight: bold; }
+.button.principal:hover { -fx-background-color: #144f8a; }
+.button.btn-tabla { -fx-font-size: 12px; -fx-padding: 4 8 4 8; }
+.text-field:focused, .combo-box:focused, .button:focused {
+    -fx-border-color: #9cc4ec;
+    -fx-border-width: 3;
+}
+.button.nav-link, .button.nav-link:hover, .button.nav-link:focused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 2 0;
+    -fx-padding: 4 2 4 2;
+    -fx-cursor: hand;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+.button.nav-link .nav-texto { -fx-text-fill: #185fa5; -fx-font-weight: bold; }
+.button.nav-link.activa { -fx-border-color: transparent transparent #185fa5 transparent; }
+.text-field.invalido { -fx-border-color: #a32d2d; }
+.text-field.solo-lectura { -fx-background-color: #f1efe8; }
+.date-picker { -fx-background-color: transparent; -fx-padding: 0; }
+.date-picker > .text-field { -fx-border-radius: 6 0 0 6; -fx-background-radius: 6 0 0 6; }
+.date-picker.invalido > .text-field { -fx-border-color: #a32d2d; }
+.date-picker > .arrow-button { -fx-background-color: white; -fx-border-color: #9a988f; -fx-border-width: 1 1 1 0; -fx-border-radius: 0 6 6 0; -fx-background-radius: 0 6 6 0; }
+.combo-box .list-cell { -fx-text-fill: #2c2c2a; -fx-padding: 4 6 4 6; }
+
+.error-campo { -fx-text-fill: #791f1f; -fx-font-size: 13px; -fx-padding: 4 0 0 0; }
+
+/* ---------- avisos ---------- */
+.aviso {
+    -fx-padding: 10 12 10 12;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-border-color: #d4d2c8;
+    -fx-background-color: #eef2f7;
+}
+.aviso .aviso-texto { -fx-fill: #2c2c2a; -fx-font-size: 14px; }
+.aviso.ok { -fx-background-color: #eaf3de; -fx-border-color: #97c459; }
+.aviso.ok .aviso-texto { -fx-fill: #27500a; }
+.aviso.err { -fx-background-color: #fcebeb; -fx-border-color: #f09595; }
+.aviso.err .aviso-texto { -fx-fill: #791f1f; }
+.aviso .negrita { -fx-font-weight: bold; }
+.aviso .dinero { -fx-font-weight: bold; -fx-font-size: 20px; }
+.aviso .hyperlink { -fx-text-fill: #185fa5; -fx-underline: true; -fx-padding: 0; -fx-border-width: 0; }
+
+/* ---------- resumen (dl) ---------- */
+.resumen { -fx-background-color: #f6f5f0; -fx-background-radius: 8; -fx-padding: 12; }
+.resumen .dt { -fx-font-size: 12px; -fx-text-fill: #5f5e5a; }
+.resumen .dd { -fx-font-weight: bold; }
+.resumen .dd.dinero { -fx-font-size: 20px; }
+
+/* ---------- estado vacío ---------- */
+.vacio {
+    -fx-alignment: center;
+    -fx-padding: 26 12 26 12;
+    -fx-border-color: #9a988f;
+    -fx-border-style: segments(4, 4);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+}
+.vacio .vacio-titulo { -fx-font-size: 15px; -fx-font-weight: bold; }
+.vacio .vacio-detalle { -fx-text-fill: #5f5e5a; -fx-text-alignment: center; }
+
+/* ---------- tablas ---------- */
+.celda, .celda-th { -fx-padding: 8; }
+.celda { -fx-border-color: #d4d2c8 transparent transparent transparent; -fx-border-width: 1 0 0 0; }
+.celda-th .label { -fx-font-size: 12px; -fx-text-fill: #5f5e5a; -fx-font-weight: bold; }
